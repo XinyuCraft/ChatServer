@@ -95,7 +95,7 @@ public class Main {
             System.out.println("未发现配置文件\n正在创建中...");
             try {
                 file.createNewFile();
-                FileWriter  writer = new FileWriter(file, true);
+                FileWriter writer = new FileWriter(file, true);
                 writer.append("serverPort=8888");
                 writer.flush();
                 writer.close();
