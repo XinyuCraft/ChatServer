@@ -9,4 +9,4 @@ ShitChat 是由 ShitTeam (史山团队) 开发的聊天程序, 其中聊天服�
 - [ ] 私聊
 
 ## 团队简介
-Shit Team团队灵感来源于 [XinyuCraft](https://space.bilibili.com/3493280035637324) 与2023年创作的屎山迷宫("屎山"并无贬义的意义,只是出于xinyucraft的搞怪).现史山迷宫有2名老成员([XinyuCraft](https://space.bilibili.com/3493280035637324) 和[zzlcraft](https://github.com/zzlxsww)
+Shit Team团队灵感来源于 [XinyuCraft](https://space.bilibili.com/3493280035637324) 与2023年创作的屎山迷宫("屎山"并无贬义的意义,只是出于xinyucraft的搞怪).现史山迷宫有2名老成员([XinyuCraft](https://space.bilibili.com/3493280035637324) 和[zzlcraft](https://github.com/zzlxsww))
