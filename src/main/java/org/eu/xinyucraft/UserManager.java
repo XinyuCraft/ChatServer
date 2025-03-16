@@ -33,7 +33,7 @@ public class UserManager {
         }
     }
 
-    public void delUser(String UserName){
+    public void delUser(String UserName){ //删除用户
         String file = "";
         try {
             fileReader.read(file.toCharArray());
