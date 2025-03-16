@@ -90,13 +90,12 @@ public class Main {
     }
 
     static { //读取配置文件
-        File chatfile = new File("chat.properties"); //服务器配置文件
-        File userfile = new File("user.properties"); //玩家登录信息
-        if (!chatfile.exists()){
+        File file = new File("chat.properties"); //服务器配置文件
+        if (!file.exists()){
             System.out.println("未发现配置文件\n正在创建中...");
             try {
-                chatfile.createNewFile();
-                FileWriter  writer = new FileWriter(chatfile, true);
+                file.createNewFile();
+                FileWriter  writer = new FileWriter(file, true);
                 writer.append("serverPort=8888");
                 writer.flush();
                 writer.close();
@@ -104,9 +103,10 @@ public class Main {
                 throw new RuntimeException(e);
             }
         }
-        if (!userfile.exists()){
+        file = new File("user.properties"); //玩家登录信息
+        if (!file.exists()){
             try {
-                userfile.createNewFile();
+                file.createNewFile();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
