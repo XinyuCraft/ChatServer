@@ -34,9 +34,13 @@ public class UserManager {
     }
 
     public void delUser(String UserName){ //删除用户
-        String file = "";
+        String message = "";
         try {
-            fileReader.read(file.toCharArray());
+            fileReader.read(message.toCharArray());
+            String parts[] = message.split(";\n");
+            for(int i = 1;i <= parts.length;i++){
+
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

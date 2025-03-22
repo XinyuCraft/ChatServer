@@ -8,5 +8,33 @@ ShitChat 是由 ShitTeam (史山团队) 开发的聊天程序, 其中聊天服�
 - [ ] 好友功能
 - [ ] 私聊
 
+## 配置文件
+``` Properties
+##############################
+#                            #
+#         服务器配置          #
+#                            #
+##############################
+
+# 服务器端口
+serverPort=8888
+
+##############################
+#                            #
+#          邮箱配置           #
+#                            #
+##############################
+
+# SMTP服务器地址
+mail.smtp.host=smtp.qq.com
+# 
+mail.smtp.port=465
+mail.smtp.ssl=true
+mail.smtp.auth=true
+mail.smtp.user=youremail@qq.com
+mail.smtp.pass=yourpassword
+mail.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory
+```
+
 ## 团队简介
 Shit Team团队灵感来源于 [XinyuCraft](https://space.bilibili.com/3493280035637324) 与2023年创作的屎山迷宫("屎山"并无贬义的意义,只是出于xinyucraft的搞怪).现史山迷宫有2名老成员([XinyuCraft](https://space.bilibili.com/3493280035637324) 和[zzlcraft](https://github.com/zzlxsww))
