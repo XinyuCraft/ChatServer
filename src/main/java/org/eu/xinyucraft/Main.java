@@ -90,7 +90,7 @@ public class Main {
     }
 
     static { //读取配置文件
-        File file = new File("chat.properties"); //服务器配置文件
+        File file = new File("config.properties"); //服务器配置文件
         if (!file.exists()){
             System.out.println("未发现配置文件\n正在创建中...");
             try {
@@ -115,7 +115,7 @@ public class Main {
         Properties properties = new Properties();
         try {
             //读取配置
-            properties.load(new FileInputStream("chat.properties"));
+            properties.load(new FileInputStream("config.properties"));
             //获取端口
             Port = Integer.parseInt(properties.getProperty("serverPort"));
             System.out.println("服务器端口为: " + Port);

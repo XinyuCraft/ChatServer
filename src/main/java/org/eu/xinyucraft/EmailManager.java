@@ -14,7 +14,7 @@ public class EmailManager {
     public static void sendEmail(String message, String toEmailAddress){ //发送邮件
         Properties properties = new Properties(); //配置文件
         try {
-            properties.load(new FileInputStream("chat.properties"));
+            properties.load(new FileInputStream("config.properties"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
