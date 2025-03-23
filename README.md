@@ -9,6 +9,7 @@ ShitChat 是由 ShitTeam (史山团队) 开发的聊天程序, 其中聊天服�
 - [ ] 私聊
 
 ## 配置文件
+ShitChat的配置文件为 `config.properties` 内容如下
 ``` Properties
 ##############################
 #                            #
@@ -21,17 +22,36 @@ serverPort=8888
 
 ##############################
 #                            #
+#         数据库配置          #
+#                            #
+##############################
+
+# JDBC数据库驱动
+JDBC_Driver = com.mysql.cj.jdbc.Driver
+# 数据库URL
+JDBC_URL = jdbc:mysql://localhost:3306/yourDatabase
+# 数据库用户名
+JDBC_User = root
+# 数据库密码
+JDBC_PassWord = yourpassword
+
+##############################
+#                            #
 #          邮箱配置           #
 #                            #
 ##############################
 
 # SMTP服务器地址
 mail.smtp.host=smtp.qq.com
-# 
+# SMTP服务器端口
 mail.smtp.port=465
+# 是否开启SSL
 mail.smtp.ssl=true
+# 是否开启登录验证
 mail.smtp.auth=true
+# 发送人邮箱
 mail.smtp.user=youremail@qq.com
+# 发送人密码
 mail.smtp.pass=yourpassword
 mail.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory
 ```
